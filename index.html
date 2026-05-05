@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 
   <title>גוחא</title>
@@ -15,40 +15,42 @@
       font-family: Arial, sans-serif;
       background: #0f172a;
       color: #e2e8f0;
-      line-height: 1.8;
     }
 
-    header {
-      background: linear-gradient(135deg, #5b0f3a, #0f172a);
-      padding: 70px 20px;
+    /* HERO */
+    .hero {
       text-align: center;
-      border-bottom: 2px solid #7a1f5c;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #5b0f3a, #0f172a);
+      position: relative;
     }
 
-    /* BIG TITLE */
-    header h1 {
+    .hero h1 {
       font-family: 'Secular One', sans-serif;
-      font-size: 72px;
+      font-size: 80px;
       margin: 0;
       color: #f5d0fe;
-      letter-spacing: 2px;
-      text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+      text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
     }
 
-    header h2 {
-      margin: 10px 0;
+    .hero h2 {
+      margin-top: 10px;
       font-weight: normal;
       color: #e9d5ff;
-      font-size: 20px;
+      font-size: 22px;
     }
 
-    header p {
-      margin: 5px 0;
-      color: #c4b5fd;
-    }
-
+    /* Memorial inside hero */
     .memorial {
-      margin-top: 20px;
+      margin-top: 40px;
+    }
+
+    .memorial img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid #a855f7;
+      margin-bottom: 10px;
     }
 
     .memorial h3 {
@@ -56,6 +58,31 @@
       color: #f5d0fe;
     }
 
+    .memorial p {
+      color: #c4b5fd;
+      margin: 0;
+    }
+
+    /* CTA */
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      padding: 12px 22px;
+      background: #7a1f5c;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background: #5b0f3a;
+    }
+
+    /* CONTENT */
     .container {
       max-width: 1000px;
       margin: auto;
@@ -65,9 +92,14 @@
     .card {
       background: #1e293b;
       padding: 25px;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      border-radius: 14px;
+      margin-bottom: 25px;
       border-right: 4px solid #7a1f5c;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     h2 {
@@ -83,11 +115,6 @@
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    a.button:hover {
-      background: #5b0f3a;
     }
 
     footer {
@@ -101,63 +128,60 @@
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
   <h1>גוחא</h1>
   <h2>ניהול כוח אדם פלוגתי</h2>
 
   <div class="memorial">
+    <img src="https://izkorimagescdn.azureedge.net/fallenimages/518291.jpg" alt="">
     <h3>לזכר</h3>
     <h3>רס״ן יוחאי ג׳וחא קלנגל</h3>
     <p>נפל ביום ח' בשבט תשע"ה</p>
   </div>
-</header>
 
+  <div class="cta">
+    <a href="https://juhahr.com" target="_blank">כניסה לאפליקציה</a>
+  </div>
+</div>
+
+<!-- CONTENT -->
 <div class="container">
 
   <div class="card">
-    <h2>על האפליקציה</h2>
+    <h2>מה זה גוחא?</h2>
     <p>
-      האפליקציה פותחה מתוך צורך אמיתי בשטח לניהול כוח אדם בצורה יעילה יותר.
-      היא מאפשרת ניהול חיילים, תרגילים, שיבוצים ומעקב בזמן אמת.
+      מערכת חכמה לניהול כוח אדם פלוגתי — ניהול חיילים, תרגילים ושיבוצים בצורה פשוטה, מהירה ונגישה מכל מקום.
     </p>
   </div>
 
   <div class="card">
     <h2>סרטוני הדרכה</h2>
-    <p><b>סרטון הדרכה ראשי:</b></p>
-    <a class="button" href="https://youtu.be/kQiwviYiMgc?si=c5ds3-hb8y_LGshb" target="_blank">צפה בסרטון</a>
+    <a class="button" href="https://youtu.be/kQiwviYiMgc?si=c5ds3-hb8y_LGshb" target="_blank">סרטון ראשי</a>
     <br/><br/>
-    <p><b>סרטון הדרכה נוסף:</b></p>
-    <a class="button" href="https://youtu.be/wsRkCoH2KQc?si=_6t9Yjsn3Uyy8c6V" target="_blank">צפה בסרטון נוסף</a>
+    <a class="button" href="https://youtu.be/wsRkCoH2KQc?si=_6t9Yjsn3Uyy8c6V" target="_blank">סרטון נוסף</a>
   </div>
 
   <div class="card">
-    <h2>לאחר צפייה בסרטונים</h2>
-    <p>
-      לאחר שצפית בכלל הסרטונים, יש לשלוח למספר <b>0549247616</b> את הפרטים הבאים:
-    </p>
+    <h2>מה צריך לשלוח?</h2>
+    <p>לאחר צפייה בסרטונים:</p>
     <ul>
       <li>שם יחידה</li>
-      <li>שם שליש בתפקיד + טלפון</li>
-      <li>מספר חיילים בפלוגה (בערך)</li>
+      <li>שם שליש + טלפון</li>
+      <li>כמות חיילים בפלוגה</li>
     </ul>
+    <p><b>לשליחה: 0549247616</b></p>
   </div>
 
   <div class="card">
-    <h2>הצטרפות ושימוש</h2>
-    <p>אנו מזמינים אתכם להשתמש באפליקציה בפלוגה שלכם.</p>
-    <p>להצטרפות: עוז קלינגל – 0549247616</p>
-  </div>
-
-  <div class="card">
-    <h2>קישורים</h2>
-    <a class="button" href="https://juhahr.com" target="_blank">לאתר האפליקציה</a>
+    <h2>הצטרפות</h2>
+    <p>להצטרפות ושאלות: עוז קלינגל – 0549247616</p>
   </div>
 
 </div>
 
 <footer>
-  © כל הזכויות שמורות – מערכת ניהול כח אדם פלוגתי
+  © גוחא – מערכת ניהול כח אדם פלוגתי
 </footer>
 
 </body>
