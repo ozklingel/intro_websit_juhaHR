@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>אפליקציית ניהול כח אדם פלוגתי</title>
+  <title>גוחא</title>
   <style>
     body {
       margin: 0;
@@ -13,45 +13,35 @@
       line-height: 1.8;
     }
 
-    /* Memorial */
-    .memorial {
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #3b0a2a, #0f172a);
-      border-bottom: 2px solid #7a1f5c;
-    }
-    .memorial img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 3px solid #a855f7;
-    }
-    .memorial h1 {
-      margin: 5px 0;
-      color: #f5d0fe;
-    }
-    .memorial p {
-      color: #e9d5ff;
-      margin-top: 10px;
-    }
-
+    /* Top Header */
     header {
       background: linear-gradient(135deg, #5b0f3a, #0f172a);
       padding: 60px 20px;
       text-align: center;
+      border-bottom: 2px solid #7a1f5c;
     }
     header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      color: #f8fafc;
+      font-size: 48px;
+      margin: 0;
+      color: #f5d0fe;
+    }
+    header h2 {
+      margin: 10px 0;
+      font-weight: normal;
+      color: #e9d5ff;
     }
     header p {
-      font-size: 18px;
-      color: #e9d5ff;
-      max-width: 800px;
-      margin: 0 auto;
+      margin: 5px 0;
+      color: #c4b5fd;
+    }
+
+    /* Memorial section */
+    .memorial {
+      margin-top: 20px;
+    }
+    .memorial h3 {
+      margin: 5px 0;
+      color: #f5d0fe;
     }
 
     .container {
@@ -97,21 +87,15 @@
 </head>
 <body>
 
-<!-- Memorial -->
-<div class="memorial" id="memorial">
-  <img src="https://izkorimagescdn.azureedge.net/fallenimages/518291.jpg"
-       alt="יוחאי (ג'וחא) קלנגל" loading="lazy">
-  <h1>לזכר</h1>
-  <h1>רס״ן יוחאי ג׳וחא קלנגל</h1>
-  <p>נפל ביום ח' בשבט תשע"ה</p>
-</div>
-
 <header>
-  <h1>אפליקציית ניהול כח אדם פלוגתי</h1>
-  <p>
-    בשעה טובה אנו משיקים אפליקציה לניהול כח אדם פלוגתי לזכרו של "ג'וחא".
-    מערכת חכמה שמעמידה את הלוחם במרכז ומעניקה למפקדים כלים לניהול מקצועי, פשוט ונגיש.
-  </p>
+  <h1>גוחא</h1>
+  <h2>ניהול כוח אדם פלוגתי</h2>
+
+  <div class="memorial">
+    <h3>לזכר</h3>
+    <h3>רס״ן יוחאי ג׳וחא קלנגל</h3>
+    <p>נפל ביום ח' בשבט תשע"ה</p>
+  </div>
 </header>
 
 <div class="container">
