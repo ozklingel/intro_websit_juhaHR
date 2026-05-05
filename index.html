@@ -27,14 +27,11 @@
       font-size: 80px;
       margin: 0;
       color: #f5d0fe;
-      text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
     }
 
     .hero h2 {
       margin-top: 10px;
-      font-weight: normal;
       color: #e9d5ff;
-      font-size: 22px;
     }
 
     .memorial {
@@ -46,25 +43,51 @@
       height: 110px;
       border-radius: 50%;
       border: 3px solid #a855f7;
-      margin-bottom: 10px;
     }
 
-    .memorial h3 {
-      margin: 5px 0;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      border-top: 3px solid #7a1f5c;
+    }
+
+    p {
+      line-height: 1.9;
+    }
+
+    .highlight {
+      color: #f5d0fe;
+      font-weight: bold;
+    }
+
+    h2 {
       color: #f5d0fe;
     }
 
-    .memorial p {
-      color: #c4b5fd;
-      margin: 0;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
     }
 
     .cta {
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     .cta a {
-      padding: 12px 22px;
+      padding: 12px 24px;
       background: #7a1f5c;
       color: white;
       border-radius: 10px;
@@ -76,45 +99,10 @@
       background: #5b0f3a;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 14px;
-      margin-bottom: 25px;
-      border-right: 4px solid #7a1f5c;
-    }
-
-    h2 {
-      color: #f5d0fe;
-      margin-top: 0;
-    }
-
-    .highlight {
-      color: #f5d0fe;
-      font-weight: bold;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 16px;
-      background: #7a1f5c;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-
     footer {
       text-align: center;
       padding: 30px;
       color: #c4b5fd;
-      font-size: 14px;
     }
   </style>
 </head>
@@ -127,9 +115,7 @@
 
   <div class="memorial">
     <img src="https://izkorimagescdn.azureedge.net/fallenimages/518291.jpg">
-    <h3>לזכר</h3>
-    <h3>רס״ן יוחאי ג׳וחא קלנגל</h3>
-    <p>נפל ביום ח' בשבט תשע"ה</p>
+    <p>לזכר רס״ן יוחאי ג׳וחא קלנגל</p>
   </div>
 
   <div class="cta">
@@ -148,47 +134,50 @@
     </p>
 
     <p>
-      רס"ן יוחאי (ג'וחא) קלנגל ז"ל, היה מ"פ בגדוד צבר בגבעתי אשר נפל,
-      יחד עם סמל ראשון דור חיים ניני ז"ל, בפעילות מבצעית במורדות הר דב,
-      מירי טיל נ"ט על שיירת כלי הרכב הגדודית, ביום ח' בשבט תשע"ה (28.1.2015)
-      והוא בן 25 בנופלו.
+      רס"ן יוחאי (ג'וחא) קלנגל ז"ל, היה מ"פ בגדוד צבר בגבעתי אשר נפל יחד עם סמל ראשון דור חיים ניני ז"ל
+      בפעילות מבצעית במורדות הר דב, ביום ח' בשבט תשע"ה (28.1.2015), והוא בן 25 בנופלו.
     </p>
 
     <p class="highlight">
-      ג'וחא היה מפקד של אנשים לפני הכל, ולכן פיתחנו אפליקציה לניהול כוח אדם פלוגתי ששמה את הלוחם במרכז.
+      ג'וחא היה מפקד של אנשים לפני הכל — ולכן פיתחנו אפליקציה ששמה את הלוחם במרכז.
     </p>
 
     <p>
-      כדי להמשיך את דרכו של ג'וחא במצוינות פיקודית ובדאגה לפרט,
-      האפליקציה הזו מעניקה למפקדים את הכלים לניהול פלוגה חכם, נגיש ומקצועי יותר בשטח.
+      האפליקציה מעניקה למפקדים כלים לניהול פלוגה בצורה חכמה, נגישה ומקצועית יותר בשטח.
+      הגרסה מותאמת למילואים אך ניתנת להתאמה גם לסדיר.
     </p>
 
     <p>
-      הגרסה הנוכחית מותאמת לפלוגת מילואים אך ניתן לעשות התאמות לסדיר.
+      אנו מזמינים אתכם להצטרף ולהשתמש במערכת בפלוגה שלכם.
     </p>
+  </div>
 
-    <p>
-      אנו מזמינים אתכם להשתמש באפליקציה לניהול כוח אדם בפלוגה שלכם.
-    </p>
+  <!-- INSTRUCTIONS -->
+  <div class="card">
+    <h2>איך מתחילים?</h2>
+
+    <p>לאחר צפייה בסרטוני ההדרכה, שלחו בוואטסאפ:</p>
+
+    <ul>
+      <li>📌 שם היחידה</li>
+      <li>📌 שם השליש + טלפון</li>
+      <li>📌 מספר חיילים בפלוגה (בערך)</li>
+    </ul>
+
+    <div class="cta">
+      <a href="https://wa.me/972549247616" target="_blank">שלח פרטים עכשיו</a>
+    </div>
   </div>
 
   <!-- VIDEOS -->
   <div class="card">
     <h2>סרטוני הדרכה</h2>
-    <a class="button" href="https://youtu.be/kQiwviYiMgc?si=c5ds3-hb8y_LGshb" target="_blank">סרטון ראשי</a>
-    <br/><br/>
-    <a class="button" href="https://youtu.be/wsRkCoH2KQc?si=_6t9Yjsn3Uyy8c6V" target="_blank">סירטון לשלישים</a>
-  </div>
 
-  <!-- INFO -->
-  <div class="card">
-    <h2>מה צריך לשלוח?</h2>
-    <ul>
-      <li>שם יחידה</li>
-      <li>שם שליש + טלפון</li>
-      <li>מספר חיילים בפלוגה</li>
-    </ul>
-    <p><b>לשליחה: 0549247616</b></p>
+    <div class="cta">
+      <a href="https://youtu.be/kQiwviYiMgc?si=c5ds3-hb8y_LGshb" target="_blank">סרטון ראשי</a>
+      <br/><br/>
+      <a href="https://youtu.be/wsRkCoH2KQc?si=_6t9Yjsn3Uyy8c6V" target="_blank">סירטון לשלישים</a>
+    </div>
   </div>
 
 </div>
